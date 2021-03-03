@@ -116,18 +116,28 @@
     </form>
     <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
 
-    <div class="index-list-wrapper">
+
+        <div class="index-list-wrapper">
             <div class="count-wrapper">
                 <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">107</span> records.</p>
                 <p class="govuk-visually-hidden">There are
                     <span class="js-accessible-list-count">107</span>
                     records listed.
                 </p>
+            </div>        <form action="" class="govuk-form govuk-!-margin-bottom-4 dl-historical-toggle-form js-hidden" data-historical="form">
+            <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="hsitorical" name="hsitorical" type="checkbox" value="show">
+                    <label class="govuk-label govuk-checkboxes__label" for="hsitorical">
+                    Show historical records
+                    </label>
+                </div>
             </div>
-
-            <table class="dl-index-list" data-filter="list">
+        </form>
+<table class="dl-index-list"
+ data-filter="list" data-historical='list'>
   <tbody>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./accessibility" data-filter="match-content">accessibility</a>
@@ -137,7 +147,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Accessibility</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./advertising" data-filter="match-content">advertising</a>
@@ -147,7 +157,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Advertising</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./affordable-housing" data-filter="match-content">affordable-housing</a>
@@ -157,7 +167,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Affordable housing</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./aggregates" data-filter="match-content">aggregates</a>
@@ -167,7 +177,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Aggregates</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./air-quality" data-filter="match-content">air-quality</a>
@@ -177,7 +187,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Air quality</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./allocated-sites" data-filter="match-content">allocated-sites</a>
@@ -187,7 +197,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Allocated sites</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./allotments" data-filter="match-content">allotments</a>
@@ -197,7 +207,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Allotments</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./archaeology" data-filter="match-content">archaeology</a>
@@ -207,7 +217,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Archaeology</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./area-specific-policy" data-filter="match-content">area-specific-policy</a>
@@ -217,7 +227,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Area specific policy</p>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./area/location-specific-policy" data-filter="match-content">area/location-specific-policy</a>
@@ -228,7 +238,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Area/location specific policy</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./arts" data-filter="match-content">arts</a>
@@ -238,7 +248,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Arts</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./aviation" data-filter="match-content">aviation</a>
@@ -248,7 +258,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Aviation</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./biodiversity" data-filter="match-content">biodiversity</a>
@@ -258,7 +268,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Biodiversity</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./broadband" data-filter="match-content">broadband</a>
@@ -268,7 +278,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Broadband</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./burial-spaces" data-filter="match-content">burial-spaces</a>
@@ -278,7 +288,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Burial spaces</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./buses" data-filter="match-content">buses</a>
@@ -288,7 +298,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Buses</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./car-parks" data-filter="match-content">car-parks</a>
@@ -298,7 +308,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Car parks</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./climate-change" data-filter="match-content">climate-change</a>
@@ -308,7 +318,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Climate change</p>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./coastal-change-management" data-filter="match-content">coastal-change-management</a>
@@ -319,7 +329,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">coastal change management</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./communications" data-filter="match-content">communications</a>
@@ -329,7 +339,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Communications</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./community-facilities" data-filter="match-content">community-facilities</a>
@@ -339,7 +349,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Community facilities</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./community-infrastructure-levy" data-filter="match-content">community-infrastructure-levy</a>
@@ -349,7 +359,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">community infrastructure levy</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./compulsory-purchase-orders" data-filter="match-content">compulsory-purchase-orders</a>
@@ -359,7 +369,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Compulsory purchase orders</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./conservation-area" data-filter="match-content">conservation-area</a>
@@ -369,7 +379,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Conservation area</p>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./conservation-built-environment" data-filter="match-content">conservation-built-environment</a>
@@ -380,7 +390,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">conservation and enhancement of the built environment</p>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./conservation-historic-environment" data-filter="match-content">conservation-historic-environment</a>
@@ -391,7 +401,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">conservation and enhancement of the historic environment</p>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./conservation-natural-environment" data-filter="match-content">conservation-natural-environment</a>
@@ -402,7 +412,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">conservation and enhancement of the natural environment</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./construction" data-filter="match-content">construction</a>
@@ -412,7 +422,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Construction</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./contamination" data-filter="match-content">contamination</a>
@@ -422,7 +432,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Contamination</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./culture" data-filter="match-content">culture</a>
@@ -432,7 +442,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Culture</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./cycling" data-filter="match-content">cycling</a>
@@ -442,7 +452,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cycling</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./density" data-filter="match-content">density</a>
@@ -452,7 +462,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Density</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./design" data-filter="match-content">design</a>
@@ -462,7 +472,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Design</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./designation" data-filter="match-content">designation</a>
@@ -472,7 +482,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Designation</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./development-management" data-filter="match-content">development-management</a>
@@ -482,7 +492,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development Management</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./digital-infrastructure" data-filter="match-content">digital-infrastructure</a>
@@ -492,7 +502,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Digital infrastructure</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./ecology" data-filter="match-content">ecology</a>
@@ -502,7 +512,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ecology</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./economy" data-filter="match-content">economy</a>
@@ -512,7 +522,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Economy</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./education" data-filter="match-content">education</a>
@@ -522,7 +532,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Education</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./employment" data-filter="match-content">employment</a>
@@ -532,7 +542,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Employment</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./energy" data-filter="match-content">energy</a>
@@ -542,7 +552,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Energy</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./enforcement" data-filter="match-content">enforcement</a>
@@ -552,7 +562,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Enforcement</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./engagement" data-filter="match-content">engagement</a>
@@ -562,7 +572,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Engagement</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./equestrian-facilities" data-filter="match-content">equestrian-facilities</a>
@@ -572,7 +582,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Equestrian facilities</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./existing-housing" data-filter="match-content">existing-housing</a>
@@ -582,7 +592,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Existing housing</p>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./flood-risk" data-filter="match-content">flood-risk</a>
@@ -593,7 +603,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">flood risk</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./flooding" data-filter="match-content">flooding</a>
@@ -603,7 +613,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Flooding</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./freight" data-filter="match-content">freight</a>
@@ -613,7 +623,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Freight</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./green-belt" data-filter="match-content">green-belt</a>
@@ -623,7 +633,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Green belt</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./gypsy-and-travellers" data-filter="match-content">gypsy-and-travellers</a>
@@ -633,7 +643,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Gypsy and travellers</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./health" data-filter="match-content">health</a>
@@ -643,7 +653,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Health</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./heritage" data-filter="match-content">heritage</a>
@@ -653,7 +663,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Heritage</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./highways" data-filter="match-content">highways</a>
@@ -663,7 +673,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Highways</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./housing" data-filter="match-content">housing</a>
@@ -673,7 +683,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Housing</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./housing-mix" data-filter="match-content">housing-mix</a>
@@ -683,7 +693,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Housing mix</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./industry" data-filter="match-content">industry</a>
@@ -693,7 +703,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Industry</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./infrastructure" data-filter="match-content">infrastructure</a>
@@ -703,7 +713,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Infrastructure</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./jobs" data-filter="match-content">jobs</a>
@@ -713,7 +723,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Jobs</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./leisure" data-filter="match-content">leisure</a>
@@ -723,7 +733,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Leisure</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./lighting" data-filter="match-content">lighting</a>
@@ -733,7 +743,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Lighting</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./listed-building" data-filter="match-content">listed-building</a>
@@ -743,7 +753,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Listed building</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./local-development-scheme" data-filter="match-content">local-development-scheme</a>
@@ -753,7 +763,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Local development scheme</p>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./minerals-and-energy" data-filter="match-content">minerals-and-energy</a>
@@ -764,7 +774,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">provision of minerals and energy</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./mining" data-filter="match-content">mining</a>
@@ -774,7 +784,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Mining</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./monitoring" data-filter="match-content">monitoring</a>
@@ -784,7 +794,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Monitoring</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./nature" data-filter="match-content">nature</a>
@@ -794,7 +804,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Nature</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./neighbourhood-planning" data-filter="match-content">neighbourhood-planning</a>
@@ -804,7 +814,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Neighbourhood planning</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./night-time-economy" data-filter="match-content">night-time-economy</a>
@@ -814,7 +824,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Night time economy</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./noise" data-filter="match-content">noise</a>
@@ -824,7 +834,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Noise</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./office" data-filter="match-content">office</a>
@@ -834,7 +844,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Office</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./open-space" data-filter="match-content">open-space</a>
@@ -844,7 +854,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Open space</p>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./other-commercial-development" data-filter="match-content">other-commercial-development</a>
@@ -855,7 +865,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">other commercial development</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./ownership" data-filter="match-content">ownership</a>
@@ -865,7 +875,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ownership</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./parking" data-filter="match-content">parking</a>
@@ -875,7 +885,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Parking</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./play-space" data-filter="match-content">play-space</a>
@@ -885,7 +895,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Play space</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./private-hire" data-filter="match-content">private-hire</a>
@@ -895,7 +905,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Private hire</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./professional-and-financial-services" data-filter="match-content">professional-and-financial-services</a>
@@ -905,7 +915,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Professional and financial services</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./public-transport" data-filter="match-content">public-transport</a>
@@ -915,7 +925,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Public transport</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./rail" data-filter="match-content">rail</a>
@@ -925,7 +935,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Rail</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./regeneration" data-filter="match-content">regeneration</a>
@@ -935,7 +945,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Regeneration</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./rent" data-filter="match-content">rent</a>
@@ -945,7 +955,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Rent</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./residential-alterations" data-filter="match-content">residential-alterations</a>
@@ -955,7 +965,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Residential alterations</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./retail" data-filter="match-content">retail</a>
@@ -965,7 +975,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Retail</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./retail-policy" data-filter="match-content">retail-policy</a>
@@ -975,7 +985,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Retail policy</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./schools" data-filter="match-content">schools</a>
@@ -985,7 +995,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Schools</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./section-106" data-filter="match-content">section-106</a>
@@ -995,7 +1005,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Section 106</p>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./security" data-filter="match-content">security</a>
@@ -1005,7 +1015,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./servicing" data-filter="match-content">servicing</a>
@@ -1015,7 +1025,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Servicing</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./specialised-housing" data-filter="match-content">specialised-housing</a>
@@ -1025,7 +1035,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Specialised housing</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./strategic-policy" data-filter="match-content">strategic-policy</a>
@@ -1035,7 +1045,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Strategic policy</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./street-markets" data-filter="match-content">street-markets</a>
@@ -1045,7 +1055,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Street markets</p>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./telecommunications" data-filter="match-content">telecommunications</a>
@@ -1055,7 +1065,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./tourism" data-filter="match-content">tourism</a>
@@ -1065,7 +1075,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Tourism</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./town-centres" data-filter="match-content">town-centres</a>
@@ -1075,7 +1085,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Town centres</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./tram" data-filter="match-content">tram</a>
@@ -1085,7 +1095,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Tram</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./transport" data-filter="match-content">transport</a>
@@ -1095,7 +1105,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Transport</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./trees" data-filter="match-content">trees</a>
@@ -1105,7 +1115,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Trees</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./use-class" data-filter="match-content">use-class</a>
@@ -1115,7 +1125,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Use class</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./views" data-filter="match-content">views</a>
@@ -1125,7 +1135,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Views</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./walking" data-filter="match-content">walking</a>
@@ -1135,7 +1145,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Walking</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./waste" data-filter="match-content">waste</a>
@@ -1145,7 +1155,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Waste</p>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./waste-management" data-filter="match-content">waste-management</a>
@@ -1156,7 +1166,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">waste management</p>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./wastewater" data-filter="match-content">wastewater</a>
@@ -1166,7 +1176,7 @@
   <td>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./water" data-filter="match-content">water</a>
@@ -1176,7 +1186,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Water</p>
   </td>
 </tr>
-<tr class=" historical-item"  data-filter="item">
+<tr class=" historical-item"  data-filter="item" data-historical-item="true">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./water-supply" data-filter="match-content">water-supply</a>
@@ -1187,7 +1197,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">water supply</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./waterways" data-filter="match-content">waterways</a>
@@ -1197,7 +1207,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Waterways</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./world-heritage-sites" data-filter="match-content">world-heritage-sites</a>
@@ -1209,8 +1219,8 @@
 </tr></tbody>
 </table>
 
+        </div>
 
-    </div>
 
         </main>
       </div>
@@ -1299,6 +1309,15 @@
             list_section_selector: '.index-list-wrapper',
             count_wrapper_selector: '.count-wrapper'
         })
+        </script>
+        <script>
+            const showCounts = true
+            const $hist = document.querySelector('[data-historical="form"]');
+            new window.DLFrontend.FilterHistorical($hist).init({
+                triggerEvents: "list:filtered",
+                listWrapperSelector: '.index-list-wrapper',
+                showCountsWhenShowingAll: showCounts
+            })
         </script>
 
   </body>
