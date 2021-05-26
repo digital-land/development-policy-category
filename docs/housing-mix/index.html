@@ -124,7 +124,7 @@
                 </a>
             </li><li class="dlf-subnav__list-item">
                 <a class="dlf-subnav__list-item__link" href="#referenced-by" data-module-sub-nav="tab">
-                Referenced by (9)
+                9 References
                 </a>
             </li>
         </ul>
@@ -138,13 +138,13 @@
             </dt>
             <dd class="govuk-summary-list__value">                Housing mix            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">development-policy-category
-            </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">housing-mix</span>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-10-03            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">development-policy-category
+            </dt>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">housing-mix</span>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -174,8 +174,8 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>development-policy-category</th>
             <th>start-date</th>
+            <th>development-policy-category</th>
             <th>name</th>
         </tr>
     </thead>
@@ -183,8 +183,8 @@
             <td>2020-10-03</td>
             <td><a href="https://github.com/digital-land/development-policy-category-collection/tree/main/transformed/development-policy-category/8df75b0c4d901a4a2a61a96b58681f919af1644d5e6d1b7108f3cf7a9ca7c079.csv#L60">8df75b0c4d90...</a></td>
             <td>59</td>
-                <td>housing-mix</td> 
                 <td>2020-10-03</td> 
+                <td>housing-mix</td> 
                 <td>Housing mix</td> 
         </tr>    </tbody>
 </table>
@@ -329,8 +329,24 @@
 	</script>
 
 <script>
+    const datasetName = "development-policy-category"
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
-    const mapComponent = new DLMaps.Map($mapElement).init({})
+    const $nationalMapLink = document.querySelector('.dl-link-national-map')
+    const mapComponent = new DLMaps.Map($mapElement).init({
+        initGeoJsonLoadCallback: function (urls, featureGroup) {
+            console.log("initial load completed")
+            // do we need to check there isn't more than one shape?
+            const center = featureGroup.getBounds().getCenter()
+            const zoom = mapComponent.map.getZoom()
+            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            console.log(url)
+            if ($nationalMapLink) {
+                // only show this for the datasets we've added to the national map
+                $nationalMapLink.href = url
+                $nationalMapLink.classList.remove("js-hidden")
+            }
+        }
+    })
 </script>
 <script>
     // Initialise back to top
