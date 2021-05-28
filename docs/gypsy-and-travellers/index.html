@@ -134,10 +134,6 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/development-policy-category/gypsy-and-travellers</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">development-policy-category
-            </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">gypsy-and-travellers</span>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-10-03            </dd>
@@ -145,6 +141,10 @@
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Gypsy and travellers            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">development-policy-category
+            </dt>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">gypsy-and-travellers</span>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -174,8 +174,8 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>start-date</th>
             <th>development-policy-category</th>
+            <th>start-date</th>
             <th>name</th>
         </tr>
     </thead>
@@ -183,8 +183,8 @@
             <td>2020-10-03</td>
             <td><a href="https://github.com/digital-land/development-policy-category-collection/tree/main/transformed/development-policy-category/8df75b0c4d901a4a2a61a96b58681f919af1644d5e6d1b7108f3cf7a9ca7c079.csv#L55">8df75b0c4d90...</a></td>
             <td>54</td>
-                <td>2020-10-03</td> 
                 <td>gypsy-and-travellers</td> 
+                <td>2020-10-03</td> 
                 <td>Gypsy and travellers</td> 
         </tr>    </tbody>
 </table>
@@ -199,28 +199,28 @@
             <p class="govuk-body">This record is referenced by 6 other planning related data records.</p>
             <h3 class="govuk-heading-s">Policy</h3>
             <ul class="govuk-list govuk-list--bullet">                <li>
-                    <a href=/development-policy/local-authority-eng/BUC/wdlp-DM26>Criteria for Traveller Sites</a>
-                    <span class="secondary-text data-reference">(wdlp-DM26)</span>
-                </li>
-                <li>
-                    <a href=/development-policy/local-authority-eng/BUC/sbcs-CP4>Gypsies, Travellers and Travelling Show People</a>
-                    <span class="secondary-text data-reference">(sbcs-CP4)</span>
-                </li>
-                <li>
-                    <a href=/development-policy/local-authority-eng/BUC/valp-S6>Gypsy, Traveller and Travelling Showpeople provision</a>
-                    <span class="secondary-text data-reference">(valp-S6)</span>
-                </li>
-                <li>
-                    <a href=/development-policy/local-authority-eng/BUC/valp-D10>Gypsy, Traveller and Travelling Showpeople sites</a>
-                    <span class="secondary-text data-reference">(valp-D10)</span>
+                    <a href=/development-policy/local-authority-eng/BUC/ccs-CS14>Sites for Gypsies and Travellers And Sites for Travelling Showpeople</a>
+                    <span class="secondary-text data-reference">(234)</span>
                 </li>
                 <li>
                     <a href=/development-policy/local-authority-eng/BUC/chalfontstpeterndp-PWI2>If additional plots for travellers are needed, the further development of around six pitches at the existing approved site, The Orchards, will be supported.</a>
-                    <span class="secondary-text data-reference">(chalfontstpeterndp-PWI2)</span>
+                    <span class="secondary-text data-reference">(285)</span>
                 </li>
                 <li>
-                    <a href=/development-policy/local-authority-eng/BUC/ccs-CS14>Sites for Gypsies and Travellers And Sites for Travelling Showpeople</a>
-                    <span class="secondary-text data-reference">(ccs-CS14)</span>
+                    <a href=/development-policy/local-authority-eng/BUC/sbcs-CP4>Gypsies, Travellers and Travelling Show People</a>
+                    <span class="secondary-text data-reference">(602)</span>
+                </li>
+                <li>
+                    <a href=/development-policy/local-authority-eng/BUC/valp-D10>Gypsy, Traveller and Travelling Showpeople sites</a>
+                    <span class="secondary-text data-reference">(715)</span>
+                </li>
+                <li>
+                    <a href=/development-policy/local-authority-eng/BUC/valp-S6>Gypsy, Traveller and Travelling Showpeople provision</a>
+                    <span class="secondary-text data-reference">(761)</span>
+                </li>
+                <li>
+                    <a href=/development-policy/local-authority-eng/BUC/wdlp-DM26>Criteria for Traveller Sites</a>
+                    <span class="secondary-text data-reference">(807)</span>
                 </li>
 </ul>
 </div>
@@ -326,7 +326,7 @@
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map

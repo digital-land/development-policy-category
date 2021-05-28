@@ -138,13 +138,13 @@
             </dt>
             <dd class="govuk-summary-list__value">                2020-10-03            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">development-policy-category
-            </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">climate-change</span>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Climate change            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">development-policy-category
+            </dt>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">climate-change</span>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -174,8 +174,8 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>start-date</th>
             <th>development-policy-category</th>
+            <th>start-date</th>
             <th>name</th>
         </tr>
     </thead>
@@ -183,8 +183,8 @@
             <td>2020-10-03</td>
             <td><a href="https://github.com/digital-land/development-policy-category-collection/tree/main/transformed/development-policy-category/8df75b0c4d901a4a2a61a96b58681f919af1644d5e6d1b7108f3cf7a9ca7c079.csv#L24">8df75b0c4d90...</a></td>
             <td>23</td>
-                <td>2020-10-03</td> 
                 <td>climate-change</td> 
+                <td>2020-10-03</td> 
                 <td>Climate change</td> 
         </tr>    </tbody>
 </table>
@@ -199,20 +199,20 @@
             <p class="govuk-body">This record is referenced by 4 other planning related data records.</p>
             <h3 class="govuk-heading-s">Policy</h3>
             <ul class="govuk-list govuk-list--bullet">                <li>
-                    <a href=/development-policy/local-authority-eng/BUC/wdlp-CP12>Climate Change</a>
-                    <span class="secondary-text data-reference">(wdlp-CP12)</span>
+                    <a href=/development-policy/local-authority-eng/BUC/bledlowcumsaundertonndp-P14>Renewable and Low Carbon Energy</a>
+                    <span class="secondary-text data-reference">(136)</span>
                 </li>
                 <li>
                     <a href=/development-policy/local-authority-eng/BUC/bmwlp-P23>Design and Climate Change</a>
-                    <span class="secondary-text data-reference">(bmwlp-P23)</span>
+                    <span class="secondary-text data-reference">(160)</span>
+                </li>
+                <li>
+                    <a href=/development-policy/local-authority-eng/BUC/wdlp-CP12>Climate Change</a>
+                    <span class="secondary-text data-reference">(792)</span>
                 </li>
                 <li>
                     <a href=/development-policy/local-authority-eng/BUC/wdlp-DM33>Managing Carbon Emissions: Transport and Energy Generation</a>
-                    <span class="secondary-text data-reference">(wdlp-DM33)</span>
-                </li>
-                <li>
-                    <a href=/development-policy/local-authority-eng/BUC/bledlowcumsaundertonndp-P14>Renewable and Low Carbon Energy</a>
-                    <span class="secondary-text data-reference">(bledlowcumsaundertonndp-P14)</span>
+                    <span class="secondary-text data-reference">(814)</span>
                 </li>
 </ul>
 </div>
@@ -318,7 +318,7 @@
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map

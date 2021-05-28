@@ -134,17 +134,17 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/development-policy-category/specialised-housing</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">development-policy-category
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">specialised-housing</span>            </dd>
+            <dd class="govuk-summary-list__value">                2020-10-03            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Specialised housing            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">development-policy-category
             </dt>
-            <dd class="govuk-summary-list__value">                2020-10-03            </dd>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">specialised-housing</span>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -174,8 +174,8 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>start-date</th>
             <th>development-policy-category</th>
+            <th>start-date</th>
             <th>name</th>
         </tr>
     </thead>
@@ -183,8 +183,8 @@
             <td>2020-10-03</td>
             <td><a href="https://github.com/digital-land/development-policy-category-collection/tree/main/transformed/development-policy-category/8df75b0c4d901a4a2a61a96b58681f919af1644d5e6d1b7108f3cf7a9ca7c079.csv#L91">8df75b0c4d90...</a></td>
             <td>90</td>
-                <td>2020-10-03</td> 
                 <td>specialised-housing</td> 
+                <td>2020-10-03</td> 
                 <td>Specialised housing</td> 
         </tr>    </tbody>
 </table>
@@ -199,36 +199,36 @@
             <p class="govuk-body">This record is referenced by 8 other planning related data records.</p>
             <h3 class="govuk-heading-s">Policy</h3>
             <ul class="govuk-list govuk-list--bullet">                <li>
-                    <a href=/development-policy/local-authority-eng/BUC/buckinghamndp-HP3>Allocate land for self build</a>
-                    <span class="secondary-text data-reference">(buckinghamndp-HP3)</span>
-                </li>
-                <li>
                     <a href=/development-policy/local-authority-eng/BUC/astonclintonndp-H4>Housing for Older People</a>
-                    <span class="secondary-text data-reference">(astonclintonndp-H4)</span>
+                    <span class="secondary-text data-reference">(14)</span>
                 </li>
                 <li>
-                    <a href=/development-policy/local-authority-eng/BUC/longcrendonndp-LC4>Housing for Older People</a>
-                    <span class="secondary-text data-reference">(longcrendonndp-LC4)</span>
-                </li>
-                <li>
-                    <a href=/development-policy/local-authority-eng/BUC/wdlp-DM27>Housing for Rural Workers</a>
-                    <span class="secondary-text data-reference">(wdlp-DM27)</span>
-                </li>
-                <li>
-                    <a href=/development-policy/local-authority-eng/BUC/wendoverndp-H4>Retirement Housing</a>
-                    <span class="secondary-text data-reference">(wendoverndp-H4)</span>
-                </li>
-                <li>
-                    <a href=/development-policy/local-authority-eng/BUC/valp-H3>Rural workers dwellings</a>
-                    <span class="secondary-text data-reference">(valp-H3)</span>
-                </li>
-                <li>
-                    <a href=/development-policy/local-authority-eng/BUC/valp-H5>Self/custom build housing</a>
-                    <span class="secondary-text data-reference">(valp-H5)</span>
+                    <a href=/development-policy/local-authority-eng/BUC/buckinghamndp-HP3>Allocate land for self build</a>
+                    <span class="secondary-text data-reference">(197)</span>
                 </li>
                 <li>
                     <a href=/development-policy/local-authority-eng/BUC/ccs-CS12>Specialist Housing</a>
-                    <span class="secondary-text data-reference">(ccs-CS12)</span>
+                    <span class="secondary-text data-reference">(232)</span>
+                </li>
+                <li>
+                    <a href=/development-policy/local-authority-eng/BUC/longcrendonndp-LC4>Housing for Older People</a>
+                    <span class="secondary-text data-reference">(534)</span>
+                </li>
+                <li>
+                    <a href=/development-policy/local-authority-eng/BUC/valp-H3>Rural workers dwellings</a>
+                    <span class="secondary-text data-reference">(736)</span>
+                </li>
+                <li>
+                    <a href=/development-policy/local-authority-eng/BUC/valp-H5>Self/custom build housing</a>
+                    <span class="secondary-text data-reference">(738)</span>
+                </li>
+                <li>
+                    <a href=/development-policy/local-authority-eng/BUC/wdlp-DM27>Housing for Rural Workers</a>
+                    <span class="secondary-text data-reference">(808)</span>
+                </li>
+                <li>
+                    <a href=/development-policy/local-authority-eng/BUC/wendoverndp-H4>Retirement Housing</a>
+                    <span class="secondary-text data-reference">(884)</span>
                 </li>
 </ul>
 </div>
@@ -334,7 +334,7 @@
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map
